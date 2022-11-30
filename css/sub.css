@@ -1,0 +1,732 @@
+.yes_font{
+  font-family: 'YES24', serif;
+}
+
+/* 도서 상세 */
+.book_cover{
+  height: 600px;
+}
+.bookCover_bg{
+  height: 100%;
+  position: relative;
+  background: url('../img/best\ \(29\).jpg') no-repeat center center / 102% 102%;
+}
+.bookCover_bg .filter{
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;height: 100%;
+  backdrop-filter: brightness(80%) blur(10px);
+}
+.bookCover_img{
+  width: 100%;height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover_img_wrap{
+  border-radius: 16px;
+  overflow: hidden;
+  width: 260px;
+  height: 390px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+.cover_img_wrap img{
+  width: 262px;
+  height: 392px;
+  max-width: initial;
+  margin: -1px;
+}
+.book_detail{
+  margin-top: -30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, .3);
+  padding: 30px 0 0;
+}
+.name{
+  padding: 30px 35px;
+  border-bottom: 1px solid #ddd;
+}
+.book_title{
+  font-family: 'YES24', serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.book_company{
+  margin: 10px 0;
+}
+
+.review_star{
+  margin: 15px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.star{margin-right: 10px;}
+.rate{
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.review_num{
+  font-size: 14px;
+}
+.star img{
+  width: 20px;
+}
+
+.file_info{
+  padding: 30px 35px;
+  border: 1px solid #ddd;
+}
+.file_info > div{
+  display: flex;
+  margin: 10px 0;
+}
+.file_info > div h4{
+  width: 30%;
+}
+.file span:nth-of-type(1){
+  position: relative;
+  margin-right: 20px;
+}
+.file span:nth-of-type(1):after{
+  content: "";
+  position: absolute;
+  right: -10px;top: 0;
+  width: 1px;height: 100%;
+  background-color: #333;
+}
+
+.device li{
+  display: inline-block;
+  line-height: 1.5;
+  margin-right: 10px;
+  padding-left: 25px;
+}
+.device li:nth-of-type(1){
+  background: url('../img/ico_dev_ios.png') no-repeat left center;
+}
+.device li:nth-of-type(2){
+  background: url('../img/ico_dev_and.png') no-repeat left center;
+}
+.device li:nth-of-type(3){
+  background: url('../img/ms.png') no-repeat left center;
+}
+.device li:nth-of-type(4){
+  background: url('../img/ico_dev_mac.png') no-repeat left center;
+}
+.device li:nth-of-type(5){
+  background: url('../img/ico_dev_ink.png') no-repeat left center;
+}
+.buy_btn{
+  padding: 40px 0 0;
+  display: flex;
+}
+.buy_btn > div{
+  width: 100%;
+  text-align: center;
+}
+
+.buy_btn a{
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  width: 40%;
+  padding: 16px 0;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.book_info{
+  background-color: #fff;
+  padding: 35px 0;
+}
+
+.book_info>article{
+  padding: 30px;
+}
+.book_info > h4{
+  padding-left: 30px;
+}
+.book_info h4{
+  font-size: 20px;
+}
+.book_info .book_info_detail{
+  padding-bottom: 50px;
+}
+.book_info_detail,
+.book_index
+{
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+.book_info_detail.show,
+.book_index.show{
+  max-height: initial;
+}
+.book_info_detail::after,
+.book_index::after{
+  content:"";
+  position: absolute;
+  left: 0;right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 35%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+}
+.book_info_detail.show::after,
+.book_index.show::after
+{
+  display: none;
+}
+.book_info_content{
+  line-height: 1.6;
+}
+.moreBtn{
+  position: absolute;
+  bottom: 25px;left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.moreBtn img{
+  width: 10px;
+  margin-left: 12px;
+  transition: .5s;
+}
+.moreBtn.on img{
+  transform: rotate(180deg);
+}
+.book_index{
+  max-height: 250px;
+  border-top: 1px solid #ddd;
+}
+
+.book_index .book_index_content{
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+.autor_detail{
+  background-color: #efefef;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.autor_content{
+  background-color: #fff;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 26px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  position: relative;
+  padding-bottom: 50px;
+}
+.autor_content.show{
+  max-height: initial;
+}
+.autor_content.show::after{
+  display: none;
+}
+.autor_content::after{
+  content:"";
+  position: absolute;
+  left: 0;right: 0;
+  bottom: 0px;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 35%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+}
+.autor_name{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.autor_name span:last-child{
+  margin-left: 20px;
+  font-size: 20px;
+}
+.autor_info{
+  line-height: 1.5;
+}
+
+.review h4{
+  padding-left: 30px;
+  font-size: 20px;
+}
+.review_write{
+  padding: 30px 0 40px;
+  border-bottom: 1px solid #ddd;
+}
+.write_btn{
+  padding: 20px 30px;
+}
+.write_btn a{
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: #405AA9;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: 'YES24', serif;
+}
+.review_list{
+  padding: 20px 0 0;
+}
+.review_list li{
+  border-bottom: 1px solid #ddd;
+}
+.review_wrap{
+  padding: 20px;
+}
+.user_id_date{
+  display: flex;
+  justify-content: space-between;
+}
+.user_star{
+  padding: 10px 0;
+}
+.user_star img{
+  height: 20px;
+}
+.review_content{
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* 이용권 */
+.ticket_main{
+  height: 700px;
+  background: #405AA9 url('../img/ticket01.png') no-repeat 20% 80% / 130%;
+  position: relative;
+}
+.txt_wrap{
+  padding: 35px 0 0 30px;
+  color: #fff;
+}
+.txt_wrap h4{
+  font-size: 26px;
+  margin: 15px 0 20px;
+  line-height: 1.3;
+  font-weight: normal;
+}
+.txt_wrap h4 span{
+  color: #F9E43F;
+}
+
+.light_txt{
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(255,255,255,0.75);
+}
+
+.ticket_main a, 
+.service_book a,
+.flo a
+{
+  position: absolute;
+  width: 80%;
+  left: 50%;bottom: 50px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  line-height: 56px;
+  border-radius: 29px;
+  font-size: 20px;
+  color: #405AA9;
+  border: 1px solid #405AA9;
+  text-align: center;
+}
+
+.service_book{
+  background-color: #fff;
+  height: 980px;
+  position: relative;
+  overflow: hidden;
+}
+.service_book .txt_wrap{
+  color: #333;
+  margin-bottom: 80px;
+}
+.service_book .light_txt{
+  color: rgba(0, 0, 0, .7);
+  font-size: 16px;
+}
+
+.service_book > div:nth-of-type(3){
+  opacity: .6;
+}
+.service_book > div:nth-of-type(4){
+  opacity: .3;
+}
+.book_ani,
+.book_ani_right{
+  overflow: hidden;
+}
+.ani,
+.ani2{
+  position: absolute;
+  top: 280px;
+  left: 50%;right: 0;
+  height: 310px;
+  margin-left: -1500px;
+}
+.ani2{
+  top: 450px;
+}
+.left2{
+  top: 620px;
+}
+.ani_list,
+.ani_list2{
+  position: absolute;
+  animation-name: ani-left;
+  animation-timing-function: linear;
+  animation-duration: 29s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.7s;
+}
+.ani_list2{
+  animation-name: ani-right;
+}
+
+@keyframes ani-left {
+  0%{
+    transform: translate(0);
+  }
+  100%, 100% {
+    transform: translate(1180px);
+  }
+}
+@keyframes ani-right {
+  0%{
+    transform: translate(910px);
+  }
+  100%, 100% {
+    transform: translate(0%);
+  }
+}
+
+.ani_list li,
+.ani_list2 li
+{
+  display: table-cell;
+  vertical-align: bottom;
+}
+.ani_list li img{
+  width: 200px;
+}
+.service_book a{
+  background-color: #405AA9;
+  color: #fff;
+}
+
+.flo{
+  height: 750px;
+  background: #5E58D2 url('../img/ticket18.jpg') no-repeat center bottom/ 70%;
+  position: relative;
+}
+.flo_img img{
+  height: 25px;
+}
+.flo a{
+  bottom: 30px;
+}
+
+.slide_info{
+  background-color: #efefef;
+  padding: 35px;
+  text-align: center;
+}
+.info_slide_box{
+  overflow: hidden;
+  position: relative;
+}
+.slide_info li{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 20px 50px;
+}
+.info_img{
+  width: 80%;
+  margin: 0 auto;
+}
+.slide_info h4{
+  padding: 20px 0;
+  font-size: 18px;
+}
+.slide_info p{
+  line-height: 1.5;
+}
+.info_slide_box .swiper-pagination{
+  bottom: 20px;
+}
+.swiper-pagination-bullet{
+  width: 10px;height: 10px;
+}
+.swiper-pagination-bullet-active{
+  background-color: #405AA9;
+}
+
+.service_fee{
+  background-color: #fff;
+  padding: 45px 35px 35px;
+  text-align: center;
+  position: relative;
+
+}
+.service_fee h4{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.price_devide{
+  font-size: 0;
+}
+.price_devide li{
+  display: inline-block;
+  width: 33.33%;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.price_devide li:nth-of-type(1){
+  background-color: #405AA9;
+}
+.price_devide li:nth-of-type(2){
+  background-color: #993399;
+}
+.price_devide li:nth-of-type(3){
+  background-color: #5E58D2;
+}
+
+.price_row dl{
+  padding: 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.price_row dt{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.price_row dd{
+  display: inline-block;
+}
+.price_row dd img{
+  width: 30px;
+}
+.fee_info p{
+  text-align: left;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #666;
+}
+.service_fee > a{
+  display: block;
+  background-color: #405AA9;
+  line-height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #fff;
+  margin: 40px 0 60px;
+}
+.link_btns a{
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 45%;
+  vertical-align: middle;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  line-height: 1.3;
+  font-size: 12px;
+}
+.link_btns a:first-child{
+  margin-right: 15px;
+}
+.link_btns a span{
+  color: #405AA9;
+  font-size: 14px;
+}
+
+/* 이용 안내 */
+.service_guide{
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ddd;
+}
+.service_guide>div{
+  padding: 0 30px;
+}
+.service_guide h3{
+  padding: 12px 0;
+  background-color: #405AA9;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.service_guide h4{
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.service_guide ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service_guide ul li{
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+.guide_ico{
+  width: 80px;height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.service_guide ul li img{
+  height: 36px;
+}
+.service_guide ul li p{
+  font-size: 14px;
+  color: #405AA9;
+}
+
+.fee_guide{
+  background-color: #fff;
+  padding: 0 30px 30px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.fee_guide h4{
+  font-size: 20px;
+  padding: 30px 0;
+  font-weight: normal;
+  text-align: center;
+}
+.fee_content dt{
+  font-family: 'YES24', serif;
+  padding: 15px 0;
+  color: #fff;
+}
+.standard dt{
+  background-color: #405AA9;
+}
+.premium dt{
+  background-color: #993399;
+}
+.bookNflo dt{
+  background-color: #5E58D2;
+}
+.fee_content dd{
+  padding: 15px 0;
+  background-color: #efefef;
+}
+
+.fee_content dd ul{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon_wrap{
+  width: 50px;height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.icon_wrap.free{background-image: url('../img/free.png');}
+.icon_wrap.money{background-image: url('../img/money.png');}
+.icon_wrap.infinite{background-image: url('../img/infinite.png');}
+.icon_wrap.flo_ico{background-image: url('../img/flo.png');}
+
+.fee_content dd p{
+  font-size: 12px;
+  color: #405AA9;
+}
+
+.bookclub_money{
+  padding: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.bookclub_money h3{
+  text-align: center;
+  padding: 10px 0 30px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.bookclub_money > div{
+  padding-bottom: 26px;
+}
+.bookclub_money > div ul{
+  list-style: disc;
+  padding-left: 30px;
+}
+.bookclub_money > div li{
+  line-height: 1.5;
+}
+
+.bookclub_money h4{
+  font-size: 18px;
+  color: #405AA9;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.app_guide{
+  background-color: #fff;
+  padding: 30px 35px;
+  text-align: center;
+}
+.app_guide h4{
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.app_guide h5{
+  font-size: 18px;
+  color: #405AA9;
+  font-family: 'YES24', serif;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.app_guide li{
+  margin-bottom: 60px;
+}
+.app_guide li p{
+  font-size: 14px;
+}
+.app_guide li p + div{
+  margin: 26px 0 20px;
+}
+.yes24_img img{
+  width: 300px;
+}
+.app_img1 img,
+.app_img2 img
+{
+  width: 350px;
+}
+
+
+
+
+

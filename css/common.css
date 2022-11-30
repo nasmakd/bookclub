@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: 'YES24';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YES24.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  background-color: #def4ed;
+}
+
+.menu_btn{
+  cursor: pointer;
+}
+
+#wrapper{
+  max-width: 640px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+header{
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+header .logo h1{
+  line-height: 1;
+}
+header .logo a{
+  display: block;
+}
+header .logo img{
+  display: block;
+}
+header .menu_btn img{
+  width: 24px;
+}
+header .ticket_btn a{
+  color: #405AA9;
+  font-family: 'YES24', serif;
+  border: 1px solid #405AA9;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+#menu{
+  position: fixed;
+  display: none;
+  left: 0;right: 0;top: 0;bottom: 0;
+  background-color: #ddd;
+  z-index: 20;
+}
+#menu.on{
+  display: block;
+}
+
+.menu_wrap{
+  max-width: 640px;
+  min-width: 360px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+.close_btn{
+  position: absolute;
+  top: 12.5px;right: 20px;
+  cursor: pointer;
+}
+.close_btn img{
+  width: 35px;
+}
+.login{
+  background-color: #405AA9;
+  padding: 20px 20px;
+  color: #fff;
+  font-family: 'YES24', serif;
+  font-size: 19px;
+  
+}
+.login img{
+  filter: brightness(100);
+  height: 15px;
+  margin-left: 20px;
+}
+
+.member{
+  padding: 30px 25px;
+  text-align: center;
+  font-family: 'YES24', serif;
+  border-bottom: 1px solid #ddd;
+}
+.member p{
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.member a{
+  display: inline-block;
+  width: 100%;
+  background-color: #405AA9;
+  color: #fff;
+  line-height: 45px;
+  border-radius: 23px;
+}
+
+.category{
+  padding: 30px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.category h3{
+  font-family: 'YES24', serif;
+  margin-bottom: 18px;
+}
+.category ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category ul li{
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-bottom: 0;
+}
+.category ul li:nth-child(3n+0){
+  border-right: 1px solid #ddd;
+}
+.category ul li:nth-child(n+19):nth-child(-n+21){
+  border-bottom: 1px solid #ddd;
+}
+.category ul li a{
+  display: block;
+}
+.info_menu{
+  padding: 20px 0;  
+  display: flex;
+  justify-content: center;
+}
+.info_menu ul{
+  text-align: center;
+}
+.info_menu ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.info_menu ul li a{
+  display: block;
+}
+.info_menu .img_wrap{
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.info_menu ul li:nth-child(1) img{
+  width: 30px;
+}
+.info_menu ul li:nth-child(2) img{
+  width: 32px;
+}
+.info_menu ul li:nth-child(3) img,
+.info_menu ul li:nth-child(4) img
+{
+  width: 45px;
+}
+#dock_bar{
+  position: fixed;
+  left: 50%;bottom: 0;
+  transform: translate(-50%, 100%) ;
+  width: 100%;
+  max-width: 640px;
+  background: #405AA9;
+  height: 60px;
+  padding: 12px 28px;
+  z-index: 100;
+  transition: .3s;
+}
+#dock_bar.on{
+  transform: translate(-50%, 0) ;
+}
+
+#dock_bar .topBtn{
+  position: fixed;
+  bottom: -180px;right: 20px;
+  opacity: 0;
+  width: 50px;height: 50px;
+  background-color: #405AA9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  cursor: pointer;
+  transition: .5s ease-in;
+}
+#dock_bar.on .topBtn{
+  bottom: 80px;
+  opacity: 1;
+}
+.topBtn img{
+  width: 20px;
+}
+#dock_bar ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#dock_bar li img{
+  height: 24px;
+}
+#dock_bar li.home img{
+  height: 36px;
+}
+
+footer{
+  background-color: #efefef;
+  text-align: center;
+  padding: 35px 0 90px;
+}
+.csCenter{
+  margin-bottom: 30px;
+}
+.csCenter > p{
+  font-size: 14px;
+  color: #878787;
+}
+.tel_num{
+  font-weight: 600;
+  font-size: 18px;
+}
+.tel_num p{
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 10px;
+
+}
+.address{
+  margin-bottom: 15px;
+  color: #878787;
+}
+.address p{
+  line-height: 1.2;
+  font-size: 12px;
+}
+.address .company{
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.copyright{
+  margin-bottom: 30px;
+  color: #878787;
+  font-size: 12px;
+}
+
+.footer_link li{
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+.footer_link li:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  right: -12px;top: 0;
+  width: 1px;height: 100%;
+  background-color: #878787;
+}

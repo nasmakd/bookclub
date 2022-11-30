@@ -1,0 +1,59 @@
+{
+	"background_color": "#ffffff",
+	"description": "예스24 북클럽 pwa",
+	"dir": "auto",
+	"display": "standalone",
+	"name": "예스24 북클럽",
+	"orientation": "any",
+	"scope": "/",
+	"short_name": "북클럽",
+	"start_url": "/",
+	"theme_color": "#ffffff",
+	"gcm_sender_id": "",
+	"gcm_user_visible_only": true,
+	"categories": [],
+	"screenshots": [
+		{
+			"src": "images/bookclub1.png",
+			"sizes": "516x625",
+			"type": "image/png"
+		},
+		{
+			"src": "images/bookclub2.png",
+			"sizes": "519x948",
+			"type": "image/png"
+		},
+		{
+			"src": "images/bookclub3.png",
+			"sizes": "519x630",
+			"type": "image/png"
+		},
+		{
+			"src": "images/bookclub4.png",
+			"sizes": "519x902",
+			"type": "image/png"
+		}
+	],
+	"icons": [
+    {
+      "src": "images/logox512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/logox128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/logox48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+	"shortcuts": [],
+	"lang": "ko"
+}

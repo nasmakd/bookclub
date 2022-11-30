@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+ul, ol{list-style: none;}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+img{
+  vertical-align: middle;
+  max-width: 100%;
+}
