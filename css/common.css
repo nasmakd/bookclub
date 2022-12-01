@@ -59,8 +59,9 @@ header .ticket_btn a{
   position: fixed;
   display: none;
   left: 0;right: 0;top: 0;bottom: 0;
-  background-color: #ddd;
+  background-color: #fff;
   z-index: 20;
+  overflow-y: auto;
 }
 #menu.on{
   display: block;
