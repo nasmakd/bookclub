@@ -56,7 +56,7 @@ let bestMonth = [
   },
   {
     img: 'img/best (11).jpg',
-    title: '내 통장 사용설명서 3.0',
+    title: '류',
     autor: '이천 저'
   },
   {
