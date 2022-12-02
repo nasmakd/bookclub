@@ -635,6 +635,10 @@ const mainSlide = new Swiper('.slider_box', {
     el: ".swiper-pagination",
     type: "fraction",
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   slidesPerView: 1,
   spaceBetween: 20,
 });
