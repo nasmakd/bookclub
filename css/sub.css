@@ -211,12 +211,12 @@
   line-height: 1.5;
 }
 
-.autor_detail{
+.author_detail{
   background-color: #efefef;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
 }
-.autor_content{
+.author_content{
   background-color: #fff;
   max-height: 200px;
   overflow: hidden;
@@ -227,13 +227,13 @@
   position: relative;
   padding-bottom: 50px;
 }
-.autor_content.show{
+.author_content.show{
   max-height: initial;
 }
-.autor_content.show::after{
+.author_content.show::after{
   display: none;
 }
-.autor_content::after{
+.author_content::after{
   content:"";
   position: absolute;
   left: 0;right: 0;
@@ -241,15 +241,15 @@
   height: 150px;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 35%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
 }
-.autor_name{
+.author_name{
   margin-bottom: 20px;
   font-weight: 500;
 }
-.autor_name span:last-child{
+.author_name span:last-child{
   margin-left: 20px;
   font-size: 20px;
 }
-.autor_info{
+.author_info{
   line-height: 1.5;
 }
 
@@ -726,7 +726,66 @@
   width: 350px;
 }
 
+#search{
+  min-height: 70vh;
+  background-color: #fff;
+}
+#search .searchWrap{
+  position: relative;
+  text-align: center;
+  background-color: #405AA9;
+  padding: 18px 0;
+  font-size: 0;
+}
+.searchWrap input{
+  height: 40px;
+  width: 50%;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  padding: 10px;
+  vertical-align: middle;
+}
+.searchWrap button{
+  height: 40px;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255,.2);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  vertical-align: middle;
+}
+.searchWrap button img{
+  width: 30px;
+}
+.searchResultsLength{
+  padding: 20px 0 30px 20px;
+}
+.search_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
 
-
-
-
+.searchResults{
+  padding: 30px 20px;
+  min-width: 70%;
+}
+.searchResults li{
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.searchResults li:first-child{
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+.searchResults .result_none{
+  border: none !important;
+  text-align: center;
+}
+.searchResults li .title{
+  margin: 10px 0;
+}
+.searchResults img{
+  width: 80px;
+}

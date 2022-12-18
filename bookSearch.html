@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YES24 북클럽 | 검색</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script defer src="js/common.js"></script>
+  <script defer src="js/sub.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div>
+        <button class="menu_btn"><img src="img/top_menu.png" alt="메뉴 버튼"></button>
+      </div>
+      <div id="menu">
+        <div class="menu_wrap">
+          <div class="close_btn">
+            <img src="img/close.svg" alt="닫기">
+          </div>
+          <div class="login">
+            <a href="#">로그인 해주세요</a><img src="img/moreArrow.png" alt="로그인 하러 가기">
+          </div>
+          <div class="member">
+            <p>가입시 첫 달 무료</p>
+            <a href="ticket.html">예스24 북클럽 가입하기</a>
+          </div>
+          <div class="category">
+            <h3>북클럽 분야</h3>
+            <ul>
+              <li><a href="#">소설</a></li>
+              <li><a href="#">에세이 시</a></li>
+              <li><a href="#">경제 경영</a></li>
+              <li><a href="#">자기계발</a></li>
+              <li><a href="#">인문</a></li>
+              <li><a href="#">사회 정치</a></li>
+              <li><a href="#">역사</a></li>
+              <li><a href="#">종교</a></li>
+              <li><a href="#">예술 대중문화</a></li>
+              <li><a href="#">자연과학</a></li>
+              <li><a href="#">가정 살림</a></li>
+              <li><a href="#">건강 취미 여행</a></li>
+              <li><a href="#">어린이 유아</a></li>
+              <li><a href="#">청소년</a></li>
+              <li><a href="#">국어 외국어</a></li>
+              <li><a href="#">IT 모바일</a></li>
+              <li><a href="#">대학교재</a></li>
+              <li><a href="#">잡지</a></li>
+              <li><a href="#">만화</a></li>
+              <li><a href="#">로맨스</a></li>
+              <li><a href="#">판타지 무협</a></li>
+            </ul>
+          </div>
+          <div class="info_menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="img/ico_not 1.png" alt="공지사항">
+                  </div>
+                  <p>공지사항</p>
+                </a>
+              </li>
+              <li>
+                <a href="service_info.html">
+                  <div class="img_wrap">
+                    <img src="img/ico_guide 5.png" alt="이용안내">
+                  </div>
+                  <p>이용안내</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="img/ico_faq 1.png" alt="faq">
+                  </div>
+                  <p>FAQ</p>
+                </a>
+              </li>
+              <li>
+                <a href="ticket.html">
+                  <div class="img_wrap">
+                    <img src="img/ico_usecard 1.png" alt="이용권">
+                  </div>
+                  <p>이용권</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <h1>
+          <a href="index.html">
+            <img src="img/logo.svg" alt="북클럽로고">
+          </a>
+        </h1>
+      </div>
+      <div class="ticket_btn">
+        <a href="ticket.html">이용권</a>
+      </div>
+    </header>
+    <section id="search">
+      <div class="searchWrap">
+        <form id="searchForm">
+          <input type="text" placeholder="책 제목을 입력하세요" class="searchInput">
+          <button type="submit"><img src="img/bx_search.png" alt="검색"></button>
+        </form>
+      </div>
+      <p class="searchResultsLength">검색결과 (<span class="results_length"></span>)</p>
+      <div class="search_content">
+        <ul class="searchResults">
+          <li class="result_none">책을 검색해 보세요</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="csCenter">
+        <div class="tel_num">
+          <p>고객 센터 1544-3800</p>
+          <p>중고샵 1566-4295</p>
+        </div>
+        <p>(평일 09:00~18:00 토요일,일요일 및 공휴일 휴무)</p>
+      </div>
+      <div class="address">
+        <p class="company">예스이십사(주)</p>
+        <p>
+          서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)<br>대표 : 김석환   개인정보보호책임자 : 권민석 yes24help@yes24.com<br>사업자등록번호 : 229-81-37000   통신판매업신고 : 제 2005-02682<br>호스팅 서비스사업자 : 예스이십사(주)
+        </p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; YES24 Corp. All Rights Reserved.</p>
+      </div>
+      <ul class="footer_link">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">PC버전</a></li>
+        <li><a href="#">App다운</a></li>
+      </ul>
+    </footer>
+    <div id="dock_bar">
+      <div class="topBtn_wrap">
+        <a href="#top" class="topBtn">
+          <img src="img/upArrow.png" alt="맨 위로">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="bookSearch.html">
+            <img src="img/bx_search.png" alt="검색하기">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/mdi_recent.png" alt="최근 본 것">
+          </a>
+        </li>
+        <li class="home">
+          <a href="index.html">
+            <img src="img/bx_home-alt-2.png" alt="홈">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/bx_user.png" alt="마이페이지">
+          </a>
+        </li>
+        <li>
+          <button class="menu_btn">
+            <img src="img/bx_menu-alt-left.png" alt="메뉴 버튼">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

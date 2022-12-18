@@ -24,7 +24,7 @@ section{
   font-weight: 500;
   margin-bottom: 7px;
 }
-.autor{
+.author{
   font-size: 13px;
   color: #878787;
 }
@@ -33,7 +33,7 @@ section{
   margin-top: 15px;
 }
 .book_title,
-.autor{
+.author{
   display: -webkit-box;
   overflow: hidden;
   word-break: break-all;
@@ -249,7 +249,7 @@ section{
   font-weight: 600;
   margin: 7px 0 10px;
 }
-.ch_txt_box .autor{
+.ch_txt_box .author{
   color: #878787;
   font-size: 14px;
 }
